@@ -1,4 +1,4 @@
-# LAB 1 - EXCEL BASICS 
+# - EXCEL BASICS 
 
 <details><summary> Objective 🌟  </summary> 
   
