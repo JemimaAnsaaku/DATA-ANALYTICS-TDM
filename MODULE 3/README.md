@@ -140,7 +140,7 @@ examples include the contents of photos, audio, video, web pages, blogs, books j
 
 </details>
 
-<details><summary> Sources of unstructured data </summary></details>
+<details><summary> Sources of unstructured data </summary>
 
 - NoSQL databases and Data Lakes - unrelational databases or in data lakes (centralised repositories for data obtained from IoT devices, websites, mobile apps, social media and other sources of raw data. they are used to store real-time data in its original format.
 
@@ -148,6 +148,7 @@ examples include the contents of photos, audio, video, web pages, blogs, books j
 
 - Application Program Interfaces (APIs) - Most common application is called RESTful which uses HTTP as their communication protocol and JSON files to store data. Allows data analysts and engineers to access subsets of the large amount of data they are constantly generating.
 
+</details>
 
 <details><summaries> Data preparation - ETL and ELT </summaries>
 
