@@ -59,7 +59,7 @@ I then repeated the process for workbook Bike_sales_2022.
 i refreshed workbook links to sync data 
 </details>
 
-<details><summary> Reflection mirror 🪞 </summary>
+<details><summary> Reflection 🪞 </summary>
 workbooks are useful when managing data across multioke files, this comes in handy for tasks such as consolidating departmental budgets, combining regional sales, tracking projects, or splitting large datasets as they keep everything synchronised.
 
 </details>
