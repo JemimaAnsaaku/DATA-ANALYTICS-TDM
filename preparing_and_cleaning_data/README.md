@@ -63,3 +63,70 @@ i refreshed workbook links to sync data
 workbooks are useful when managing data across multioke files, this comes in handy for tasks such as consolidating departmental budgets, combining regional sales, tracking projects, or splitting large datasets as they keep everything synchronised.
 
 </details>
+
+<details><summary> Data types </summary>
+
+- static - data that is recieved and stored prior to performing analyses on the data. 
+
+- streaming - data is processed and analysed as it is recieved and subsequent results are used or stored.
+
+- string - data that is treated as text and composed of letters. numbers are not to be used.
+
+- integer - whole numbers or numbers that do not unclude decimals - may or may not use negative numbers depending on computer language
+
+- floating point - numbers with decimal places - frequantly used
+
+- date and time - important in recording when an observation in a dataset was made
+
+- boolean - data that is treated as either true or false. typically writted as TRUE or FALSE to indicate a Boolean result instead of a string
+
+</details>
+
+<details><summary> Characteristics of Structured Data </summary>
+
+- Structured data refers to the data that is entered and maintained in defined fields within a file or record.
+
+- structured data is easily entered, classified, classified, queried and analysed by a computer - for example, when we submit our name address and billing info into a website, we are creating structured data.
+
+- it is well defined and organised in structure
+
+- can be stored in tables, usually within vertical columns and horizontal rows
+
+- the content and format of the data is documented
+
+- it is organised into files, records and fields
+
+- it can be searched, sorted and queried
+
+- input controls can reduce the possibility of invalid data
+</details>
+
+<details><summary> CSV Files </summary>
+
+different applications save data in different formats, so universal formats are used to ensure compatibility.
+
+- CSV: Plain text, uses commas (or other seperators) for columns and new lines for rows, this is common for spreadsheers, databases, analytics and visualisation. Remember, a special character in CSV is any that is not a number or letter and can be used to seperate columns in a data table.
+
+- JSON: lightweight, human-readable, widely used for data exchange.
+
+- XML: Markup language similar to HTML, supports structured data.
+
+Converting data into these common formats makes it easier to combine and share across different tools and systems. 
+
+</details>
+
+<details><summary> Structured File Types </summary>
+
+There are many, hold on in your seat.,
+
+- relational database - collection of tables with columns and rows which are connected by pre-defined relationships.
+
+- Logs - machine generated historical record of everything that happens within a system (think transactions, errors, even log ticker.)
+
+- spreadsheets - flat file database, it stores and records in a single file with no hierarchical structure
+
+- sensor readings - sensor output usually collected in a standardised format, which may very by manufacturer. Individual readings may be seperated only by a delimiter or may be time dependent (one output per second seperated by timestamps.)
+
+- transactional records - records of transactions can be stored in many different formats depending on transaction tyoe and source.
+
+</details>
