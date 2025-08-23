@@ -10,6 +10,7 @@ Vehicle crime isn't just about cars being stolen or damaged. It destroys livelih
 <details> <summary> The Big Question 🙋‍♀️ </summary>
 What patterns in vehicle crime can be used to predict and prevent incidents affecting pedestrians?
 
+
 Understanding the patterns of vehicular crime is vital as it allows law enforcement to anticipate where and when pedestrians are most at risk. This knowledge not only prevents harm to the public as we would be able to prematurely intercept a criminal before they act, but reduces fear in the community. 
 </details>
 
