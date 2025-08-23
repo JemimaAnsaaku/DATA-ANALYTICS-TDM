@@ -9,5 +9,5 @@ This portfolio marks the start of my Data Analytics journey with The West Midlan
 
 <details>
   <summary> Active Investigations 🗂️ (Personal projects) </summary>
-  - [Operation Hot wheels 🚗🔥](
+  - Operation Hot wheels 🚗🔥
 </details>
