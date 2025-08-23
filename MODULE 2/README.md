@@ -112,10 +112,11 @@ in this section you can control how excel treats or displays the values within t
 
 - text - treats whatever you type as text, even if it is a number 
 
+
 </details>
 
 
-Observations, Variables and values 
+**Observations, Variables and values**
 
 <details><summary> Key words and concepts 🔐 </summary>
     
