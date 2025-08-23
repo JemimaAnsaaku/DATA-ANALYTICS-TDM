@@ -8,6 +8,7 @@ Vehicle crime isn't just about cars being stolen or damaged. It destroys livelih
 </details>
 
 <details> <summary> The Big Question 🙋‍♀️ </summary>
+
 What patterns in vehicle crime can be used to predict and prevent incidents affecting pedestrians?
 
 
