@@ -190,10 +190,36 @@ Once selected click 'conditional formatting' within home toolbar then 'highlight
 
 This highlights duplicate values within the column or row in red. 
 
-**step 2 fixing and removing duplicates** 
+
+Formula-bar way to spot duplicates:
 
 
-this can be corrected by changing the value within the cell or removing the row or column - ONLY if the entire row or column are duplicated.
+=COUNTIF(A:A,A2)>1
+
+- counts how many times the value in A2 shows up in column A.
+
+- >1 -  asks, “does it show up more than once?”
+
+
+- If YES → formula shows TRUE (duplicate).
+
+  
+If NO → formula shows FALSE (unique).
+
+
+Formula 2: Show only unique values
+
+
+=UNIQUE(A:A)
+
+
+This is a newer Excel function.
+
+
+It looks at all of column A and automatically spits out only the values that aren’t repeated.
+
+
+
 
 ***Step 3: Finding Empty Cells***
 
@@ -208,6 +234,19 @@ Once highlighted, check if you can fill them from context or source data; if not
 
 Example: fill C11=5, G16=Youth, M22=Mountain-200 Black, 42, N23=4.
 
+1. Check if a whole row has any blanks
+
+   
+Example: Row 2 has data across columns A to D.
+
+
+=COUNTBLANK(A2:D2)>0
+
+
+COUNTBLANK(A2:D2) → counts how many blank cells in that row.
+
+
+>0 → TRUE if at least one blank.
 
 **Step 4: Splitting Text into Columns (Parsing)**
 
@@ -227,6 +266,18 @@ Then, split color into another new column.
 What’s left is the model.
 
 
+Check if a whole column has any blanks
+
+
+Example: Column A, rows 2–100.
+
+
+=COUNTBLANK(A2:A100)>0
+
+
+Tells you if that column has at least one blank cell.
+
+
 ***Step 5: Removing Extra Spaces***
 
 Extra spaces mess up searches or counts.
@@ -236,21 +287,88 @@ Use LEN() to check length, TRIM() to remove extra spaces.
 Copy TRIM results back into the original column as values, then delete helper columns.
 
 
+Sometimes a cell isn’t empty, it just has hidden spaces.
+
+
+=LEN(A2)=0
+
+
+TRUE if it’s really empty.
+
+
+But if it looks empty and you get FALSE → then the cell has spaces or invisible characters.
+
+
 ***Step 6: Changing Case***
 
-Use UPPER(), LOWER(), PROPER() to fix text case.
+1. LOWER()
 
 
-Example: make all country names lowercase using =LOWER(), then paste values back.
+=LOWER(A2)
+
+
+Takes whatever text is in cell A2.
+
+
+Turns ALL letters into lowercase.
+
+
+Example: UNITED STATES → united states.
+
+
+use when  data is in ALL CAPS and you need it cleaner.
+
+
+3. UPPER()
+
+
+=UPPER(A2)
+
+
+Takes whatever text is in A2.
+
+
+Turns ALL letters into uppercase.
+
+
+Example: united states → UNITED STATES.
+
+
+Use when you want consistency in uppercase (like codes, acronyms).
+
+
+PROPER()
+
+
+=PROPER(A2)
+
+
+Takes whatever text is in A2.
+
+
+Capitalises the first letter of every word.
+
+
+Example: united states → United States.
+
+
+Use when you want neat titles or names.
 
 
 ***Step 7: Highlight Possible Errors***
 
 
-Look for zeros in Unit Cost or Unit Price using Conditional Formatting → Equal to 0.
+Instead of scanning with your eyes, you let Excel highlight them.
 
+Select the desired column.
 
-Fix the errors manually (e.g., O9=$1252, P9=$769).
+Go to Home → Conditional Formatting → Highlight Cell Rules → Equal To.
+
+In the box, type 0.
+
+Pick a bright color (like red fill).
+
+potential errors will now be highlighted 
 
 
 ***Step 8: Find and Replace***
@@ -262,7 +380,84 @@ Replace shorthand data with full words for clarity:
 F → Female, M → Male.
 
 
-Use Find & Replace with “Match case” to avoid messing up other words.
+Use Find & Replace with “Match case” as an option. When it’s on, Excel only finds text that exactly matches the uppercase and lowercase letters you typed. 
+
+
+You can select the entire column first, then use Find & Replace with Match Case. Excel will only search within the selected column, not the whole sheet.
+
+
+Single Cell Replacement (Formula-Bar Version)
+Formula:
+
+
+=IF(A2="F","Female",IF(A2="M","Male",A2))
+
+
+Breakdown:
+
+
+= starts a formula in Excel.
+
+
+IF(condition, value_if_true, value_if_false) → checks a condition.
+
+
+Step 1: IF(A2="F","Female",IF(A2="M","Male",A2))
+
+
+Checks if A2 = "F".
+
+
+If TRUE → returns "Female".
+
+
+If FALSE → goes to the second IF.
+
+
+Step 2 (nested IF): IF(A2="M","Male",A2)
+
+
+Checks if A2 = "M".
+
+
+If TRUE → returns "Male".
+
+
+If FALSE → returns A2 (keeps original value).
+
+
+Other details:
+
+
+, -separates the three parts of each IF.
+
+
+() → wraps the arguments for each IF.
+
+
+"" → indicates text strings.
+
+
+Logic in plain English:
+
+
+If A2 = F → show Female
+
+
+Else if A2 = M → show Male
+
+
+Else → keep original value in A2
+
+
+
+Usage:
+
+
+Put formula in first row (e.g., Q2)
+
+
+Drag down → applies to all rows in that column
 
 
 **Step 9: Spell Check**
@@ -273,12 +468,14 @@ Use Review - Spelling to catch typos in text columns.
 Ignore column names, fix actual spelling errors.
 
 
+
 **Step 10: Remove Formatting**
 
 
-Remove weird formatting like alignment or colors using Home → 
+Remove weird formatting like alignment or colors using 
 
-Clear → Clear Formats.
+
+home - clear - clear formats
 
 
 </details>
