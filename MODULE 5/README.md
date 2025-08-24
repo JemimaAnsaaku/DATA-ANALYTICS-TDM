@@ -1,4 +1,4 @@
-# Analysing Data Uisng Stats
+# Analysing Data Using Stats
 
 <details><summary> Objectives </summary>
 
