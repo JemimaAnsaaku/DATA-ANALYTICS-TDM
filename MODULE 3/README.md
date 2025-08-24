@@ -8,7 +8,7 @@ During this module, I learned how to describe the various sources of data that a
 Selecting relevant data is vital in ensuring the validity and reliability of data analysis. It may be necessary to establish new procedures to collect the data required or could also involve combining data from multiple sources into a format that can be analysed. 
 </details>
 
-<details><summary> What should I ask myself when collecting a data source? </summary>
+<details><summary> What should I ask myself when collecting a data source? 🤨  </summary>
 
 1. what data points are necessary to inform my analysis?
 
