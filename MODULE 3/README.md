@@ -1,6 +1,7 @@
 <details><summary> Objectives ✅ </summary>
 
 During this module, I learned how to describe the various sources of data that are used in data analytics. I became able to describe various types of structured and unstructured data files. Finally, I was able to configure data according to the requirements of an analysis.
+
 </details>
 
 <details><summary> Selecting relevant data 🔎 </summary>
@@ -480,3 +481,13 @@ home - clear - clear formats
 
 </details>
 
+<details><summary> Quiz Reflection </summary>
+
+Open data is nnot protected by intellectual property restrictions and may be used and redistributed without legal, technical or social restrictions. 
+
+Web scraping tools automatically extract data from the HTML pages often using a bot or web crawwler to find and obtain data, which can be gathered and copied from the web into a database or spreadsheet
+
+
+when choosing data for analysis, important considerations must be made to ensure that the data is releanct to the original busienss question and the data is current.
+
+</details>
