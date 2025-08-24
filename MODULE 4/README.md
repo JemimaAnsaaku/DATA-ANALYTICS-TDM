@@ -124,4 +124,189 @@ I’ve learnt that combining data and using conditional formatting isn’t just 
 
 </details>
 
+<DETAILS><SUMMARY> Formulas and functions </SUMMARY>
 
+Formulas
+
+A formula is a calculation I write in a cell. All formulas start with = so 
+
+
+Excel knows I’m doing math or some calculation, not typing text. For example, =1+2 shows 3 instead of =1+2.
+
+I learnt that formulas can use numbers directly or cell references like =L1/L7. This means Excel divides the value in L1 by L7.
+
+
+Relative References
+
+These adjust when I copy the formula to other cells. Example: =L1/L7 copied down becomes =L2/L8, =L3/L9 etc. I understood that Excel is smart and changes the references automatically.
+
+
+Absolute References
+
+These always point to the same cell no matter where I copy the formula. I add $ signs like =$L$1/$L$7. I can also fix just the row L$1 or just the column $L1. I learnt this is useful if I want one fixed number in many calculations.
+
+
+Functions
+
+Functions are pre-made formulas that do something specific. They have a name and arguments inside brackets. Example: =AVERAGE(L2:L37) calculates the average of cells L2 to L37.
+
+
+Some key text functions I used:
+
+
+CONCAT(A2,B2) - joins text from two cells
+
+
+LEN(A2) - counts characters
+
+
+LEFT(A2,5) - gets first 5 characters
+
+
+RIGHT(A2,3)- gets last 3 characters
+
+
+MID(A2,2,4) - gets 4 characters starting from the 2nd
+
+
+Some key statistics functions I used:
+
+
+COUNT(range) - counts numbers
+
+
+COUNTBLANK(range)- counts blank cells
+
+
+COUNTA(range) - counts non-empty cells
+
+
+COUNTIF(range, criteria) - counts cells matching a condition
+
+
+AVERAGEIF(range, criteria, avg_range)- averages only cells matching a condition
+
+
+MINIFS/MAXIFS(range, criteria_range, criteria) - finds smallest/largest meeting a condition
+
+
+Errors I noticed:
+
+#NAME -Excel doesn’t recognise the function name
+
+
+#N/A - data isn’t found
+
+
+#NULL - wrong range intersection
+
+
+#REF- invalid cell reference
+
+
+#NUM -invalid math calculation
+
+
+#DIV/0!-  division by zero
+
+
+#VALUE - wrong type of input (like text instead of number)
+
+
+Reflection: I now understand that every part of a formula has a purpose, and Excel won’t guess if I make a mistake. Reading error codes teaches me exactly what went wrong.
+
+
+</DETAILS>
+
+<DETAILS><SUMMARY> LAB WORK - FUNCTIONS AND FORMULAS 
+
+Lab – Formulas and Functions (My Notes)
+
+
+Objectives
+
+
+In this lab, I learned the basics of using formulas and functions in Excel.
+
+
+Formulas are calculations I write myself, like adding or dividing numbers, while functions are pre-made calculations that Excel already knows, like SUM or AVERAGE.
+
+
+The goal is to manipulate data quickly, accurately, and in a way that makes sense.
+
+
+Part 1: Using Excel Text Functions
+
+
+Text functions let me work with words, letters, and text in Excel.
+
+
+The functions I used were CONCAT to join text from different cells into one, LEFT to take characters from the start of a string, RIGHT to take characters from the end of a string, MID to take characters from the middle of a string, and LEN to count how long a text string is.
+
+Steps I Followed
+
+I opened the workbook Bike Sales_Functions_Lab.
+
+I used CONCAT to combine sales order number, quantity, product subcategory, and date into a new column called Sales Summary. An example of the result is “000261695: 4 Mountain Bikes – 12/01/2021”.
+
+
+Reflection: CONCAT helped me see all the information in one place instead of looking across multiple columns. It saves time and reduces mistakes.
+
+
+I used LEFT, MID, and RIGHT to split the bike description (model, color, size) into separate columns. For example, =LEFT(M2,12) returns the first 12 characters for the model, =MID(M2,14,5) returns 5 characters for color, and =RIGHT(M2,2) returns 2 characters for size.
+
+
+Reflection: Some product descriptions weren’t the same length, so I had to adjust formulas for some rows. This taught me that formulas often need to be tailored for real-world data.
+
+
+Part 2: Using Excel Statistical Functions
+
+
+Statistical functions help analyze numeric data. Functions I used include COUNT, COUNTA, COUNTBLANK, COUNTIF, AVERAGEIF, MINIFS, and MAXIFS.
+
+
+I checked the Order Quantity column for blank or invalid data. COUNT counts numeric cells, COUNTA counts all non-blank cells, and COUNTBLANK counts blank cells.
+
+
+Reflection: This showed me that some cells may look correct but are treated as text, which can break calculations. Checking blanks ensures accurate analysis.
+
+
+I used COUNTIF to find duplicate order numbers. COUNTIF returns the number of cells that meet a condition. I tried creating duplicates and COUNTIF correctly counted 2 or 3 occurrences.
+
+
+Reflection: COUNTIF makes it easy to spot duplicates that could distort analysis.
+
+
+I used AVERAGEIF to calculate average revenue by age group, like Youth (<25), Young Adults (25-34), and Adults (35-64).
+
+
+Reflection: AVERAGEIF automatically filters and calculates averages for specific groups. This is useful for quick insights without manually sorting data.
+
+
+I used MINIFS and MAXIFS to find smallest and largest revenue from Australia.
+
+
+Reflection: MINIFS and MAXIFS are great for identifying extremes while applying conditions. It saves time compared to manually scanning data.
+
+
+Part 3: Experimenting with Other Excel Functions
+
+
+I explored LOWER, UPPER, and PROPER to change text case, LEN to count characters, and FIND/SEARCH to locate letters or words in a string.
+
+
+Reflection: Exploring functions showed me how powerful Excel is. I realized I can clean and prepare data, check errors, and extract insights without doing everything manually.
+
+
+Overall Reflection
+
+
+By completing this lab, I learned how to combine, split, and clean text data using functions, check for blank, duplicate, or invalid entries, filter and calculate numbers conditionally, and why relative vs absolute references matter.
+
+
+Reflection: 
+
+This lab made me feel more confident that I can prepare a messy dataset, check for errors, and create readable summaries using formulas and functions. Testing formulas and adjusting for real-world quirks is an important part of working with data.
+
+
+</SUMMARY></DETAILS>
