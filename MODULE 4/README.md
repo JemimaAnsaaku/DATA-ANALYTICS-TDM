@@ -218,7 +218,7 @@ Reflection: I now understand that every part of a formula has a purpose, and Exc
 
 </DETAILS>
 
-<DETAILS><SUMMARY> LAB WORK - FUNCTIONS AND FORMULAS 
+<DETAILS><SUMMARY> LAB WORK - FUNCTIONS AND FORMULAS </SUMMARY>
 
 Lab – Formulas and Functions (My Notes)
 
@@ -309,4 +309,4 @@ Reflection:
 This lab made me feel more confident that I can prepare a messy dataset, check for errors, and create readable summaries using formulas and functions. Testing formulas and adjusting for real-world quirks is an important part of working with data.
 
 
-</SUMMARY></DETAILS>
+</DETAILS>
