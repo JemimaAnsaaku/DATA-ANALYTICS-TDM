@@ -560,7 +560,7 @@ Learning VLOOKUP is about more than memorising a formula. It’s about thinking 
 
 </details>
 
-<details><summary></summary> LAB- Using VLOOKUP in data analysis
+<details><summary> LAB- Using VLOOKUP In Data Analysis </summary>
 
 ### Objectives
 
