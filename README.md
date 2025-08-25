@@ -1,106 +1,73 @@
-# Operation Hot Wheels 🚗 🔥 
+# Data Analytics Portfolio
 
-<details> <summary> Briefing Time 🔎 (Introduction) </summary>
+This repository documents my journey through the TDM Data Analytics Level 4 course, including labs, projects, and reflections on the skills I have developed and applied. It also links my academic and professional experiences to my growth as a data analyst.
 
-## Birmingham's overall crime rate is a whopping 193% of the national average
+## About Me
 
-I have chosen to focus on Operation Hot wheels for my personal project as it directly relates to my role as an ANPR researcher within the West Midlands Police, and aligns with their goal to decrease vehicle related crimes within Birmingham. Vehicular crime is a significant issue within the West Midlands, and has lasting mental, financial and physical negative impacts for victims of such crimes. With my passion of using data to fight crime, this project gives me the opportunity to analyse patterns in vehicle offenses and explore ways to predict and prevent incidents.
-</details>
+I began my academic journey studying for a BSc in Psychology, developing a strong understanding of human behaviour. Early in my career, I joined TSB as an anti-fraud advisor. This role sparked my interest in enforcing policies and protecting others, combining analytical skills with a focus on security and prevention.  
 
-<details><summary> Demo Link 📝 (See how this works)</summary>
+Realising I wanted to build on my psychology knowledge in a more applied and investigative way, I pursued a Master's in Forensic Psychology. Once I graduated, I took the opportunity to join the West Midlands Police, where their values and commitment to serving the public aligned with my own.  
 
-😳 Oops! Nothing to see here yet
+The apprenticeship with TDM, in collaboration with the Level 4 Data Analytics provider, has given me the chance to formalise and expand my analytical skills while applying them to real-world policing and security challenges.
 
-**If you have a working demo of the project, provide the link so that readers can see your project in action.**
-</details>
+## Course Overview
 
-<details><summary> Table of Contents 📍 </summary>
+This portfolio captures the following modules and the key skills learned:
 
-</details>
+- **Module 1: Data Analytics Projects**  
+  Exploring real-time analytics, building a project portfolio, documenting work, and sharing outputs.
 
-<details><summary> Business Understanding 🎯  </summary>
-Vehicle crime represents a significant operational challenge for the West Midlands Police (WMP), as it directly challenges the commitments they have promised to protect, being to protect human life and property. Vehicle crime impacts public safety, community confidence and the abundance of police resources. Both pedestrians and road users are vulnerable when exposed to the elevated risks of accidents, theft or serious injury. Failiure to prevent and protect the public by the WMP is often met with backlash, a decrease of trust in lawful processes and with each other in society. 
+- **Module 2: Getting Started with Data Gathering and Investigation**  
+  Collecting, evaluating, and understanding datasets for analysis.
 
+- **Module 3: Preparing and Cleaning Data for Analysis**  
+  Correcting errors, standardising formats, and preparing data for accurate analysis.
 
-For the WMP, leveraging quantitative date to be used in statistical analyses is critical to support evidence-based-decision-making, which often aids in more accurate geographic and time sensitive hotspots to predict future offences and identify processes which can prevent crime from first taking place.  
+- **Module 4: Transforming Data with Excel**  
+  Applying formulas, functions, and charts to manipulate data and produce visualisations.
 
+- **Module 5: Analyse the Data Using Statistics**  
+  Using descriptive and inferential statistics to uncover insights and identify trends.
 
-By understanding crime patterns, I can reccomend data-driven best practices to reduce crime, improve public safety, and increase efficiency of WMP's resource allocation.
-</details>
+- **Module 6: Introduction to Relational Databases and SQL**  
+  Understanding database structures and retrieving data efficiently using queries.
 
-<details> <summary> The Big Question 🙋‍♀️ </summary>
+- **Module 7: Introduction to Structured Queries**  
+  Using SQL to explore datasets, aggregate information, and generate actionable insights.
 
-## What patterns in vehicle crime can be used to predict and prevent incidents affecting pedestrians?
+- **Module 8: Introduction to Tableau**  
+  Creating interactive dashboards for visual storytelling and decision support.
 
+- **Module 9: Ethics and Bias in Data**  
+  Recognising ethical considerations, identifying bias, and ensuring fair and accurate analysis.
 
-Understanding the patterns of vehicular crime is vital as it allows law enforcement to anticipate where and when pedestrians are most at risk. This knowledge not only prevents harm to the public as we would be able to prematurely intercept a criminal before they act, but reduces fear in the community. 
-</details>
+- **Module 10: Take the Next Steps**  
+  Applying analytical skills to practical projects and planning further professional development.
 
-<details> <summary> Data Sourcing 📉  </summary>
+## My Data Analytics Journey
 
-## Predictive and Prescriptive analytic models are most relevant here. 
+My journey connects psychology, fraud prevention, and policing:
 
-Predictive analyses will help us to identify patterns and conditions likely to result in a vehicle related crime. 
+- Understanding human behaviour through psychology underpins my analytical reasoning.  
+- Experience in anti-fraud taught me the importance of protecting people by enforcing policies.  
+- Forensic psychology expanded my understanding of investigative processes and critical thinking.  
+- Working with the West Midlands Police allows me to apply data analysis in real operational contexts to support law enforcement and public safety.  
+- The TDM Level 4 Data Analytics course provides formal training to enhance my ability to analyse, interpret, and communicate data effectively.  
 
+This portfolio reflects both my practical experience and the analytical skills I have developed through structured learning and applied projects.
 
-Prescriptive analytic models will advise on how to prevent incidents which may put pedestrians in harm's way. 
-</details>
+## Using This Repository
 
-<details><summary> Which data elements apply? 🤔 </summary>
+- **Labs and Exercises**: Step-by-step exercises to build technical and analytical skills.  
+- **Projects**: Applied examples connecting datasets to real-world policing and fraud prevention scenarios.  
+- **Reflections**: Notes and reasoning behind analytical decisions.  
+- **Visualisations and Statistics**: Charts, graphs, and summaries supporting insights from the data.
 
-- Number of vehichle related crimes within the area per month
+## Future Goals
 
+- Deepen SQL and Tableau skills to handle larger and more complex datasets.  
+- Explore predictive and prescriptive analytics to anticipate patterns and support proactive decision-making.  
+- Continue building a professional portfolio that demonstrates both technical ability and reflective thinking in real-world contexts.
 
-- Location of the different areas where crimes take place
-
-  
-- Time/date means the day, month, or even hour of occurence
-
-  
-- Type of crime refers to the category of vehicle crime. I will look at the top three most common for Birmingham which are Theft of Motor Vehicle (TOMV), Theft from Motor Vehicle (TEMV) and criminal damage to a motor vehicle. 
-
-</details>
-
-<details><summary> Screenshots of Visualisations/Results</summary>
-😳 oops! Nothing to see here yet
-
-  
-**Input examples of the process or outputs. In analytics, these can be images of visualizations.**
-</details>
-
-<details><summary> Technologies 💻 </summary>
-😳 oops! Nothing to see here yet
-
-
-**List all of the technologies you used to complete the project, to show your proficiency with these tools.**
-</details>
-
-<details><summary> Set up ⚙️ </summary>
-😳 oops! Nothing to see here yet
-
-
-**Instructions on how to set up or install the environment and any dependencies that are required. This section can also include usage instructions for readers who want to duplicate your results.**
-</details>
-
-<details><summary> Approach 🛤️  </summary>
-😳 oops! Nothing to see here yet
-
-
-**the process and the types of analysis utilized to obtain the data, prepare and clean it, and to test the outcomes.**
-</details>
-
-<details><summary> Status ⏳  </summary>
-😳 oops! Nothing to see here yet
-
-
-**The current status of the project. In most cases, you will be putting information into the repository while you are working on the project, so the status will be “in process” and, later, “complete/released”. If there are multiple versions of your project, you can indicate the version here, as well.**
-</details>
-
-<details><summary> Credits 🥇   </summary>
-😳 oops! Nothing to see here yet
-
-
-**List of individuals or organizations that contributed or provided assistance to you while you created the project. You can also list sites that provided inspiration or feedback.**
-</details>
-
+Author: Jemima
 
