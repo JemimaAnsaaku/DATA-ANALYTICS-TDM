@@ -22,8 +22,6 @@ Examples of using the SELECT function in sql to retrieve the data from a relatio
 
 ![ex](https://github.com/JemimaAnsaaku/DATA-ANALYTICS-TDM/blob/main/MODULE%206/Screenshot%202025-08-25%20at%2015.06.42.png?raw=true)
 
-![ex](https://github.com/JemimaAnsaaku/DATA-ANALYTICS-TDM/blob/main/MODULE%206/Screenshot%202025-08-25%20at%2015.06.42.png?raw=true)
-
 ![ex](https://github.com/JemimaAnsaaku/DATA-ANALYTICS-TDM/blob/main/MODULE%206/Screenshot%202025-08-25%20at%2015.04.35.png?raw=true)
 
 ![ex](https://github.com/JemimaAnsaaku/DATA-ANALYTICS-TDM/blob/main/MODULE%206/Screenshot%202025-08-25%20at%2015.03.51.png?raw=true)
