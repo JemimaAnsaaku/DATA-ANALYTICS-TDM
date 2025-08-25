@@ -69,5 +69,4 @@ This portfolio reflects both my practical experience and the analytical skills I
 - Explore predictive and prescriptive analytics to anticipate patterns and support proactive decision-making.  
 - Continue building a professional portfolio that demonstrates both technical ability and reflective thinking in real-world contexts.
 
-Author: Jemima
 
