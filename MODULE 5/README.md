@@ -454,3 +454,214 @@ Reflection
 Working through this lab made me think differently about outliers. At first, I just wanted to find “weird” numbers, but now I understand that the context is everything. Outliers can represent mistakes, rare events, or hidden insights. Sorting, charting, and using formulas are just tools — the key is understanding why a value stands out and deciding what to do with it. This lab showed me that data cleaning is not a boring pre-step; it’s a critical part of analysis that shapes every conclusion drawn from the dataset.
 If you like, I can do the Visualizations Lab next in this same reflective, GitHub-friendly style, so your entire Excel notes set feels cohesive and personal. Do you want me to do that now?
 
+</DETAILS>
+
+<details><summary> VLOOKUP </summary>
+
+### Objective
+
+The goal is to understand how VLOOKUP works and how it can be used for data analysis and cleaning. This lab focuses on finding information in large datasets and identifying duplicates or related data points efficiently.
+
+
+What is VLOOKUP?
+
+
+Definition: VLOOKUP stands for “vertical lookup.” It searches for a value in the leftmost column of a table and returns a value from the same row in another column.
+Why it matters: In big spreadsheets, manually looking for a specific value is slow and prone to mistakes. VLOOKUP automates this process, making data analysis much faster and more reliable.
+
+
+Four key components of VLOOKUP:
+
+- Lookup Value – the specific value you want to find.
+- Table Array – the range of cells where the function will search.
+- Column Index Number – the column in the range containing the value to return.
+- Range Lookup – TRUE for approximate match, FALSE for exact match.
+
+
+Reflection: Understanding these components is crucial. If any part is wrong (e.g., wrong column number or forgetting FALSE for exact match), the function can give incorrect results. This helps me remember that VLOOKUP isn’t just a formula — it’s a logical search tool.
+
+
+Using VLOOKUP to Look Up a Typed Value
+
+Example: Find a movie budget by typing the movie title.
+
+Formula:
+
+=VLOOKUP(G2, A1:D11, 3, FALSE)
+
+G2 = typed movie title (lookup value)
+
+A1:D11 = table where data is stored
+
+3 = column with the budget
+
+FALSE = exact match required
+
+
+Reflection: This shows why VLOOKUP is powerful — I can type a movie name once and immediately get the corresponding budget. It also illustrates the importance of exact matching; without FALSE, Excel might return the wrong budget if the list isn’t sorted.
+
+
+Using VLOOKUP for Data Cleaning
+
+VLOOKUP can also check for duplicates or inconsistencies across lists.
+
+Example: Check if any villain is also listed as a superhero.
+
+
+Formula:
+
+=VLOOKUP(B2, $A$2:$A$10, 1, FALSE)
+
+B2 = villain name being checked
+
+$A$2:$A$10 = superhero column (absolute reference)
+
+1 = column to return (the same column here)
+
+FALSE = exact match
+
+
+Reflection: Using absolute references ($) is critical because it ensures that copying the formula down the column doesn’t change the range. This shows me how VLOOKUP can scale across many rows without losing accuracy. The #N/A error naturally indicates that the villain is not in the superhero list, which is a clever way to flag data issues without extra work.
+
+
+Customizing VLOOKUP Results
+
+VLOOKUP can be combined with IF and ISNA to return more descriptive results:
+
+Formula:
+
+=IF(ISNA(VLOOKUP(B2, $A$2:$A$10, 1, FALSE)), "Unique", "Duplicate")
+
+ISNA checks if VLOOKUP returned an error (#N/A).
+
+IF then returns “Unique” if there’s no match, “Duplicate” if a match exists.
+
+Reflection: This step shows how formulas can be made user-friendly. Instead of seeing cryptic errors, I get meaningful labels. It highlights the importance of not just finding data but interpreting it in a way that makes sense for decision-making or reporting.
+
+
+### XLOOKUP – An Alternative
+
+
+XLOOKUP is a newer function that solves some limitations of VLOOKUP:
+
+Can search any column, not just the leftmost.
+
+Defaults to exact match.
+
+Not backwards compatible, so older Excel versions may not support it.
+
+
+Reflection: XLOOKUP is more flexible and safer in some scenarios, but VLOOKUP remains widely used and reliable for backwards-compatible sheets. It’s helpful to know both so I can adapt based on Excel version constraints.
+
+
+ending note
+
+Learning VLOOKUP is about more than memorising a formula. It’s about thinking logically about how data is structured: which column to search, what to return, and how to handle missing values. VLOOKUP and its variations are foundational tools for efficiently exploring, validating, and cleaning data. Combining them with IF and ISNA shows how Excel can communicate findings clearly, not just compute numbers.
+
+</details>
+
+<details><summary></summary> LAB- Using VLOOKUP in data analysis
+
+### Objectives
+
+In this lab, I will use the VLOOKUP function in Excel to:
+
+
+Part 1: Examine a large dataset and understand why search functions are necessary.
+
+Part 2: Apply the VLOOKUP function to retrieve meaningful information from the dataset.
+
+Why this lab matters:
+
+VLOOKUP provides a systematic way of locating and extracting specific information from big datasets. It ensures that searches are both fast and accurate, reducing human error and making data analysis manageable.
+
+
+Part 1 – Initial Examination of the Dataset
+
+
+Applying VLOOKUP
+
+
+Step 1: Select a Result Display Area
+
+To keep results clear and separate from raw data, I created a small input/output area on the right-hand side of the worksheet.
+
+In U3, I typed: Sales_Order# =
+
+In U4: Product =
+
+In U5: Order_Quantity =
+
+Why this matters: Using a dedicated area avoids cluttering the main dataset and creates a consistent “search hub” where queries and results are displayed. This is especially helpful when datasets are very large.
+
+
+Step 2: Create the VLOOKUP Functions
+
+Formulas created:
+
+In V4:
+
+=VLOOKUP(V3, A2:S753, 13, FALSE)
+
+In V5:
+
+=VLOOKUP(V3, A2:S753, 14, FALSE)
+
+
+Breaking it down:
+
+V3 - the lookup value (Sales_Order# entered by the user).
+
+A2:S753 - the dataset range covering all rows and columns.
+
+13 - tells Excel to return the Product (column 13 of the dataset).
+
+14 - tells Excel to return the Order_Quantity (column 14).
+
+FALSE - ensures Excel only finds exact matches.
+
+
+Why this matters: Each part of the function is essential. The column index tells Excel what information to pull out, and the FALSE parameter prevents Excel from returning “close” but incorrect results.
+
+
+Step 3: Test the VLOOKUP Functions
+
+Entered 000261274 in V3.
+
+V4 returned Road-650 Red 44 (Product).
+
+V5 returned 2 (Order Quantity).
+
+
+Observation:
+If Excel removes leading zeros (e.g., showing 261274 instead of 000261274), typing '000261274 (with an apostrophe) forces Excel to keep the formatting.
+Why this matters: Data formatting issues, like dropped leading zeros, can cause lookups to fail. Understanding how Excel handles text vs numbers is crucial for avoiding errors.
+
+
+Step 4: Test with More Inputs
+
+I tried additional Sales_Order# values. Results consistently returned the correct Product and Order Quantity when valid IDs were used.
+
+
+Why this matters: Testing across multiple cases builds confidence in the formula’s reliability. It also confirms that the lookup range and column indexes were chosen correctly.
+
+
+Step 5: Improve the VLOOKUP Function
+
+Problem: If an invalid Sales_Order# (e.g., 12345) is entered, the result is #N/A.
+
+Solution: Wrap the function in IFNA to provide a more user-friendly response:
+
+In V4:
+
+=IFNA(VLOOKUP(V3, A2:S753, 13, FALSE), "Not Found")
+
+In V5:
+
+=IFNA(VLOOKUP(V3, A2:S753, 14, FALSE), "Not Found")
+
+
+Why this matters: Error messages like #N/A can confuse non-technical users. Returning “Not Found” communicates the same idea clearly and professionally.
+
+
+</details>
