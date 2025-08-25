@@ -2,8 +2,6 @@
 
 <details><summary> Objectives </summary>
 
-## Lab – Introduction to Statistics (My Notes)
-
 Objectives
 
 In this module, I learnt why understanding basic statistics is essential for anyone working with data. At first, I thought visualisations alone could tell the story, but I realised that without knowing the underlying statistics, charts can be misleading or misinterpreted. Statistics is the foundation that helps me make sense of numbers and ensures I can make informed decisions based on data.
@@ -31,13 +29,12 @@ Creating graphs or charts in Excel is more than dragging data into a chart type.
 
 Reflection: I found this interesting because I’ve seen charts in reports before that looked professional but were actually misleading. Learning the statistical basis for visualisation will help me avoid that mistake.
 
-Overall Reflection
 
 By the end of this module, I hope to feel more confident interpreting data, applying statistical concepts, and presenting my findings visually. I want to be able to not just make charts, but tell the story behind the numbers. This module is helping me build a mindset where I question, check, and think critically about data before presenting it. Understanding statistics feels like a superpower for making smart, informed decisions with data.
 
 </details>
 
-<details><summary> What are statistics, populations and samples </summary>
+<details><summary> What are statistics, populations and samples? </summary>
 
 
 In statistics, a **population** is the entire group I am interested in studying. It’s like imagining all the people, items, or events that could possibly be included in my analysis. For example, if I want to know the average height of students in my school, the population would be every single student in the school. Populations are usually very large, and it’s often not practical to collect data from every member.  
@@ -60,8 +57,9 @@ Key Takeaways
 - Choosing a random and representative sample is crucial; otherwise my data could be misleading.  
 - Statistical measures can change depending on whether I am working with a population or a sample.  
 
+</details>
 
-## descriptive statistics 
+<details><summary> descriptive statistics</summary>
 
 Descriptive statistics are about **summarising and describing the data I have**. They don’t try to predict anything or make assumptions about people or things I haven’t measured. It’s like looking at a snapshot of the data and explaining what I see.
 
@@ -88,7 +86,9 @@ In the fitness tracker example, even if I see that I only hit my goal 60% of the
 
 Reflection: This helped me understand why data analysts often start with descriptive statistics before doing anything else. It’s the first step to really knowing the data before making any guesses or predictions.
 
-## inferential statistics 
+</details>
+
+<details><summary>inferential statistics </summary>
 
 Inferential statistics are about going beyond the data I already have. Instead of just describing my dataset (like with descriptive statistics), I can take a **smaller sample of a population** and then make predictions or draw conclusions about the bigger population it represents.  
 
@@ -107,9 +107,13 @@ Key Points
 - Different **sampling techniques** can be used to reduce error and increase confidence. The type of technique depends on the type of data I’m working with.  
 
 
-Reflection: I now see the difference between descriptive and inferential statistics more clearly. Descriptive statistics are about “what is happening in the data I already collected,” while inferential statistics are about “what this data might mean for a larger group.” It feels like moving from just looking at facts to making predictions or testing ideas. That shift is what makes inferential statistics such an important tool for data analysts.  
+Reflection: 
 
-## Statistics and Big data
+I now see the difference between descriptive and inferential statistics more clearly. Descriptive statistics are about “what is happening in the data I already collected,” while inferential statistics are about “what this data might mean for a larger group.” It feels like moving from just looking at facts to making predictions or testing ideas. That shift is what makes inferential statistics such an important tool for data analysts.  
+
+</details>
+
+<details><summary> Statistics and Big data</summary>
 
 
 What I Understand  
@@ -136,8 +140,9 @@ Reading this made me realise how descriptive and inferential statistics work tog
 
 This reinforces for me that statistics isn’t just about numbers — it’s about making sense of messy, real-world data so that the conclusions I draw are meaningful and trustworthy. It also makes me appreciate why data analysts spend so much time preparing data before diving into deeper analysis.
 
+</details> 
 
-## Common types of data visualisations 
+<details><summary>Common types of data visualisations </summary>
 
 I’ve learned that there are many ways to show data visually, and choosing the right one is important for understanding what the data is really telling us. To decide, I need to ask myself some key questions:
 
@@ -172,10 +177,10 @@ Pie Charts – Pie charts show proportions of a whole. I understand that each sl
 Scatter Plots – Scatter plots are used to show the relationship between two variables. Each point represents one observation. I’ve found them very helpful to spot patterns, correlations, or outliers. For example, I can see if higher advertising spend is associated with higher sales. They don’t show proportions or trends over time, but they are great for exploring how variables interact.
 From doing this section, I’ve realised that choosing the right chart is not just about making the data look nice. It’s about making the story behind the data clear. A good visualisation helps me, and anyone else looking at the data, to see patterns, comparisons, and trends quickly. It also makes it easier to communicate findings and make decisions based on the data.
 
+</details>
 
-## LAB Practical
+<details><summary>LAB - Practical Create Visualisations in Excel </summary>
 
-Lab – Create Visualisations in Excel
 
 
 Objectives
@@ -298,3 +303,154 @@ Pie charts are best for showing proportions.
 I’ve also realised that formatting, including titles, axis labels, legends, and data labels, is essential. Without these, even a correctly plotted chart can be hard to read.
 
 </details>
+
+
+<DETAILS><SUMMARY> Outliers and anomalies </SUMMARY>
+
+Before doing any data analysis, I have to clean the data first.
+
+
+Part of cleaning means checking for outliers (data points that don’t fit with the rest).
+
+
+These need attention, because they can either be mistakes or they can be important signals in the data.
+
+An outlier = a value that is much higher or much lower than the others.
+
+
+Example: one data point sitting far away from the rest of the cluster.
+
+
+Key thing:
+
+Sometimes it’s just an error → if left in, it could mess up the results.
+
+
+Sometimes it’s real → and could actually tell me something meaningful
+
+
+### Why investigate anomalies?
+
+If I ignore them, my analysis could become inaccurate.
+
+
+If I check them properly, I can:
+
+
+Correct mistakes.
+
+
+Keep the “true” unusual values that might explain something important.
+
+
+So, investigating anomalies is really about making sure my results are valid and trustworthy.
+
+
+With small datasets, it’s usually simple: just sort or filter the numbers and the odd one stands out.
+
+
+With big datasets, it’s much harder → I need proper tools to find them.
+
+
+Two common visualisation methods:
+
+Scatter plots → show individual points and make “odd” ones visible.
+
+
+Box plots → highlight values that sit way outside the normal range.
+</DETAILS>
+
+<details><summary> LAB - Interpret Visualisations With Respect to Others </summary>
+
+# OBJECTIVE
+
+I’m using Excel to spot **outliers** (weird values that don’t fit) 
+
+# KEY DEFINITIONS 
+
+**Outlier**  
+
+A value that’s way bigger or way smaller than the rest. Could be a mistake, could be important.
+
+**PivotTable**  
+
+A quick summary table. It groups raw rows so I can see totals by date, country, etc.
+
+**Scatter chart**  
+
+A dot plot. Each dot is a value. Dots far away from the pack = suspicious.
+
+**LARGE / SMALL**  
+
+Excel functions that pull out the biggest or smallest values without me scrolling for ages.
+
+### Objective
+
+This lab is about learning to identify outliers in a dataset using Excel. Outliers are values that are much higher or lower than the rest of the data, and they can either be mistakes or important signals. Understanding them is key because they can dramatically affect analysis, so it’s not just about finding weird numbers — it’s about interpreting what they mean.
+
+
+Part 1: Examine a Dataset for Outliers
+
+
+Step 1: Opening the Dataset
+
+
+I opened the file Bike Sales_Outlier_Lab.xlsx in Excel online.
+
+
+Reflection: The first step is simple but crucial — if you can’t access the dataset, nothing else matters. Just opening it and seeing the data helps me start thinking about patterns, like which columns might matter for spotting unusually high or low sales.
+
+
+Step 2: Creating a Pivot Table
+
+
+I inserted a PivotTable into a new worksheet and included the Date and Order_Quantity fields.
+Reflection: Pivot tables are so useful because they summarise data instantly. Instead of scrolling through dozens of rows, I can see total orders per day. It’s easier to notice when one day spikes far above the others. I also realised that without summarising, outliers might hide among normal-looking data points — this step is about clarity and perspective.
+
+
+Step 3: Sorting to Identify Outliers
+
+
+Next, I sorted the Sum of Order_Quantity column from highest to lowest.
+Reflection: Sorting is the most basic way to flag extremes. Seeing the largest values on top makes it obvious that December 19th had an unusually high order quantity. Even with small datasets, this step immediately shows which data points might need further investigation. The “why” here is about efficiency — this is the first filter to flag anomalies.
+
+
+Step 4: Using a Scatter Plot
+
+
+I copied the pivot table data to blank columns, because Excel won’t chart directly from a pivot table, then inserted a scatter plot with Date on the x-axis and Order_Quantity on the y-axis.
+
+Reflection: Visualising the data makes patterns obvious. On the scatter plot, the December 19th data point sticks out like a sore thumb. Scatter plots are especially important when datasets get larger — numbers alone can be overwhelming, but a chart lets me “see” anomalies. This step reinforced that visual thinking is as important as the numbers themselves.
+
+
+Step 5: Using LARGE and SMALL Functions
+
+I used formulas to extract the highest and lowest values:
+
+=LARGE($E$4:$E$27,1) gives the highest value.
+
+=LARGE($E$4:$E$27,ROW($1:5)) gives the top 5 highest.
+
+=SMALL($E$4:$E$27,ROW($1:6)) gives the lowest 6.
+
+
+Reflection: Functions like LARGE and SMALL are invaluable for large datasets. Instead of scanning hundreds or thousands of rows, I can instantly find extreme values. This step highlighted the importance of systematic approaches in data analysis — it’s about speed and accuracy when dealing with a lot of information.
+
+
+**Handling Outliers**
+Once outliers are found, I considered how to deal with them. There are two main options:
+
+
+1. Delete Outliers
+Sometimes outliers are just errors. Removing them ensures that these mistakes don’t distort analysis. But it’s important to save a copy of the dataset first to investigate the source. Reflection: I realised that blindly deleting data could hide important patterns, so keeping a backup is a way of being responsible as an analyst.
+
+
+2. Normalise Outliers
+Another approach is to adjust the outlier to be closer to the other values. For example, changing a spike from 43 orders to 20 if the normal maximum is 19. Reflection: This is a more nuanced approach — it keeps the data usable without letting one extreme value dominate. But it requires careful thinking and research to avoid skewing results. I learned that outlier management isn’t just technical; it’s also about judgement and context.
+
+
+Reflection
+
+Working through this lab made me think differently about outliers. At first, I just wanted to find “weird” numbers, but now I understand that the context is everything. Outliers can represent mistakes, rare events, or hidden insights. Sorting, charting, and using formulas are just tools — the key is understanding why a value stands out and deciding what to do with it. This lab showed me that data cleaning is not a boring pre-step; it’s a critical part of analysis that shapes every conclusion drawn from the dataset.
+If you like, I can do the Visualizations Lab next in this same reflective, GitHub-friendly style, so your entire Excel notes set feels cohesive and personal. Do you want me to do that now?
+
