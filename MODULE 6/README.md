@@ -158,3 +158,56 @@ This feels very different from just scrolling through a spreadsheet. With SQL, I
 | IS NOT NULL | Checks for non-empty values | Filters records that have actual values | `SELECT * FROM Movie WHERE revenue IS NOT NULL;` |
 
 </details>
+
+<details><summary> Best Practices </summary>
+
+# Best Practices for Using SQL and Minimising Errors
+
+Through my Cisco practicals, I’ve seen how easy it is to make small mistakes in SQL that cause either errors or misleading results. Below is a breakdown of best practices I’ve built up to help me minimise errors and write cleaner, more reliable queries.  
+
+## 1. Be specific with SELECT  
+Avoid using SELECT * unless I truly need every field. Writing out the exact column names keeps results clear and prevents issues if the table structure changes later.  
+
+## 2. Watch spaces and formatting  
+Extra or missing spaces can cause errors, especially when keywords or column names blend together. For example, SELECTtitle will fail, while SELECT title works. Consistent formatting, like capitalising keywords such as SELECT, WHERE, ORDER BY, makes the query easier to read and debug.  
+
+## 3. Use commas carefully  
+Forgetting a comma between column names is one of the easiest mistakes to make.  
+Correct: SELECT title, year FROM Movie;  
+Wrong: SELECT title year FROM Movie;  
+
+## 4. Always end with a semicolon  
+Some systems don’t mind if you forget the semicolon, but many do. It’s safer to always end queries properly so I don’t hit errors in environments that require it.  
+
+## 5. Double-check spelling and case  
+Table and column names must be exact. If a column is called MovieId, typing movieid might not work in certain databases. Cross-checking names in the schema avoids unnecessary debugging.  
+
+## 6. Build queries step by step  
+Start small and add pieces gradually.  
+
+First run: SELECT title FROM Movie;  
+
+Then add: WHERE year > 1976;  
+
+Finally add: ORDER BY title ASC;  
+
+This approach makes it clear where something goes wrong.  
+
+## 7. Use comments to explain  
+Adding -- for comments above tricky parts of a query means I can come back later and understand why I made certain choices.  
+
+## 8. Handle conditions with care  
+Using WHERE correctly is vital. Mixing up = with LIKE, or forgetting parentheses in combined conditions with AND or OR, can change the meaning of a query completely. Slow, logical thinking helps avoid subtle mistakes.  
+
+## 9. Manage results with ORDER BY and LIMIT  
+Large outputs are hard to check. Ordering results and limiting rows lets me confirm the query works before running it on the full dataset.  
+
+## 10. Think beyond syntax  
+Just because a query runs doesn’t mean it’s correct. I always pause to ask: does this output actually answer the question? If not, I revisit my logic.  
+
+## Reflection  
+
+Most of my errors in SQL have come from small details: missing spaces, commas, or semicolons. These are easy to overlook but critical for making queries work. The other big risk is logical mistakes like combining conditions incorrectly, which can give the wrong data without throwing an error. By slowing down, formatting queries clearly, and building them step by step, I’ve started to catch these mistakes early. Over time, these practices will help me write queries that are not just functional, but meaningful and trusted.  
+
+</details>
+
