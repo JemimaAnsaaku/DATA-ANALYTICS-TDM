@@ -109,3 +109,52 @@ Reflecting here, I see that mastering these operators will be crucial for more a
 
 
 </details>
+
+<details><summary> Using SQL to Query data </summary>
+
+Using SQL to Query Data
+
+As I start working more with SQL, I’m realising that while I can pull all the data from a table, in real data analysis I almost never want everything. Usually, I’m interested in just a specific subset of information that answers a question or helps me find a pattern.  
+
+For example, in the Movies database I’ve been using, I first learned how to list every movie’s title and year. That’s fine for practice, but it’s not very useful if I only want recent movies or want to sort them in a specific way. This is where the power of SQL really shows.  
+
+
+Breaking this down:  
+
+- SELECT Command: This tells SQL which columns I want to see. In this case, I only want the title and year. I’m not pulling all the other columns like director or revenue because I don’t need them right now. This is efficient and keeps the output focused.  
+
+- FROM Command: This defines the table I’m querying, here it’s Movie. I need to know the table structure first so I can pull the right columns.  
+
+- WHERE Command: This allows me to filter the data. By using year > 1976, I’m only selecting rows that meet this condition. I like thinking of it as setting rules for which data to include.  
+
+- **ORDER BY Command**: This sorts the results. title ASC means the titles will be in alphabetical order from A to Z. I could also use DESC if I wanted them in reverse order. Sorting is really helpful when scanning large outputs or preparing reports.  
+
+Reflections:  
+
+Working through this query makes me see how SQL is not just about getting data—it’s about controlling what you get and how it’s presented. I’m also starting to understand why logical operators like `>` (greater than), `<` (less than), `=` (equal), and `!=` (not equal) are so essential. They let me shape the data to answer the questions I actually care about.  
+
+This feels very different from just scrolling through a spreadsheet. With SQL, I can ask very specific questions and get exactly what I need, which is essential when datasets are huge or constantly changing.
+
+</details>
+
+<details><summary> SQL Operators Summary </summary>
+
+# SQL Operators Summary
+
+| Operator | Meaning / Description | Why it is Important | Example |
+|----------|--------------------|------------------|---------|
+| =        | Equal to           | Used to match exact values in a column | `SELECT * FROM Movie WHERE year = 1995;` |
+| != or <> | Not equal to       | Filters out specific values from results | `SELECT * FROM Movie WHERE year != 1995;` |
+| >        | Greater than       | Finds values above a certain threshold | `SELECT title FROM Movie WHERE year > 2000;` |
+| >=       | Greater than or equal to | Includes the threshold value in results | `SELECT title FROM Movie WHERE year >= 2000;` |
+| <        | Less than          | Finds values below a certain threshold | `SELECT title FROM Movie WHERE year < 2000;` |
+| <=       | Less than or equal to | Includes the threshold value in results | `SELECT title FROM Movie WHERE year <= 2000;` |
+| BETWEEN  | Between a range of values | Filters results within a specific range, inclusive | `SELECT * FROM Movie WHERE year BETWEEN 1990 AND 2000;` |
+| LIKE     | Pattern matching   | Finds values that match a text pattern, useful for partial matches | `SELECT * FROM Movie WHERE title LIKE 'Toy%';` |
+| IN       | Matches any value in a list | Efficient for checking multiple possible matches | `SELECT * FROM Movie WHERE year IN (1995, 1996, 1997);` |
+| AND      | Logical AND        | Combines multiple conditions, all must be true | `SELECT * FROM Movie WHERE year > 2000 AND revenue > 50000000;` |
+| OR       | Logical OR         | Combines multiple conditions, any can be true | `SELECT * FROM Movie WHERE year < 1990 OR revenue > 50000000;` |
+| IS NULL  | Checks for empty values | Filters records with missing or unknown values | `SELECT * FROM Movie WHERE revenue IS NULL;` |
+| IS NOT NULL | Checks for non-empty values | Filters records that have actual values | `SELECT * FROM Movie WHERE revenue IS NOT NULL;` |
+
+</details>
