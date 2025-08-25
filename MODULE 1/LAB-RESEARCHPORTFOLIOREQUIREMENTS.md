@@ -65,41 +65,41 @@ Prescriptive analytic models will advise on how to prevent incidents which may p
 😳 oops! Nothing to see here yet
 
   
-**Input examples of the process or outputs. In analytics, these can be images of visualizations.**
+**Input examples of the process or outputs. In analytics, these can be images of visualisations.**
 </details>
 
 <details><summary> Technologies 💻 </summary>
 😳 oops! Nothing to see here yet
 
 
-**List all of the technologies you used to complete the project, to show your proficiency with these tools.**
+**List all of the technologies used to complete the project, to show proficiency with these tools.**
 </details>
 
 <details><summary> Set up ⚙️ </summary>
 😳 oops! Nothing to see here yet
 
 
-**Instructions on how to set up or install the environment and any dependencies that are required. This section can also include usage instructions for readers who want to duplicate your results.**
+**Instructions on how to set up or install the environment and any dependencies that are required. This section can also include usage instructions for readers who want to duplicate  results.**
 </details>
 
 <details><summary> Approach 🛤️  </summary>
 😳 oops! Nothing to see here yet
 
 
-**the process and the types of analysis utilized to obtain the data, prepare and clean it, and to test the outcomes.**
+**the process and the types of analysis utilised to obtain the data, prepare and clean it, and to test the outcomes.**
 </details>
 
 <details><summary> Status ⏳  </summary>
 😳 oops! Nothing to see here yet
 
 
-**The current status of the project. In most cases, you will be putting information into the repository while you are working on the project, so the status will be “in process” and, later, “complete/released”. If there are multiple versions of your project, you can indicate the version here, as well.**
+**The current status of the project. In most cases, will be putting information into the repository while working on the project, so the status will be “in process” and, later, “complete/released”. If there are multiple versions of the project. version can also be indicated here**
 </details>
 
 <details><summary> Credits 🥇   </summary>
 😳 oops! Nothing to see here yet
 
 
-**List of individuals or organizations that contributed or provided assistance to you while you created the project. You can also list sites that provided inspiration or feedback.**
+**List of individuals or organisations that contributed or provided assistance - can also list sites that provided inspiration or feedback.**
 </details>
 
