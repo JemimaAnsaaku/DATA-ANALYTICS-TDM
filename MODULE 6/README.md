@@ -211,3 +211,7 @@ Most of my errors in SQL have come from small details: missing spaces, commas, o
 
 </details>
 
+<details><summary> Grouping data </summary>
+
+
+</details>
