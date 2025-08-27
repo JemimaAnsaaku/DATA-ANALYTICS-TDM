@@ -213,5 +213,24 @@ Most of my errors in SQL have come from small details: missing spaces, commas, o
 
 <details><summary> Grouping data </summary>
 
+## Grouping Data
 
-</details>
+- In SQL, "GROUP BY" -clause groups together rows in a table based on the valyes in a given column. 
+- Doing so allows me to perform calculations on each group.
+- such calculations include: SUM(), AVG(), and COUNT()
+
+  </details>
+
+<details><summary> ## LAB: Grouping  </summary>
+
+- remember - to select all vehichles within the table *SELECT * FROM vehicles (case sensitive)
+
+- to group vehicles based on the column  SELECT * FROM vehicles GROUB BY *insert column*
+
+- As a result the table only shows the first row in each group, HOWEVER SQL is grouping the rows behind the scenes. In this instance we can switch to picture mode to visualise the groups that are being made. For the example, I tried grouping by the propellant column instead of the substrate to see how the groups change
+
+- Now let us use functions to enact on growups by replacing * in our SELECT command - this is because * stands for all, and we dont want all, we just want what we are sorting by which is AVG(SPEED),
+
+- However, this gives us a messy result as we cannot see which average goes with each propellant, therefore we need more columns. we can do this by writing SELECT ", propellant" - the comma is important -BEFORE the AVG(SPEED) 
+
+
