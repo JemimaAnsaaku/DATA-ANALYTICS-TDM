@@ -221,7 +221,7 @@ Most of my errors in SQL have come from small details: missing spaces, commas, o
 
   </details>
 
-<details><summary> ## LAB: Grouping  </summary>
+<details><summary> LAB: Grouping  </summary>
 
 - remember - to select all vehichles within the table *SELECT * FROM vehicles (case sensitive)
 
@@ -231,6 +231,6 @@ Most of my errors in SQL have come from small details: missing spaces, commas, o
 
 - Now let us use functions to enact on growups by replacing * in our SELECT command - this is because * stands for all, and we dont want all, we just want what we are sorting by which is AVG(SPEED),
 
-- However, this gives us a messy result as we cannot see which average goes with each propellant, therefore we need more columns. we can do this by writing SELECT ", propellant" - the comma is important -BEFORE the AVG(SPEED) 
+- However, this gives us a messy result as we cannot see which average goes with each propellant, therefore we need more columns. we can do this by writing SELECT "propellant," - the comma is important -BEFORE the AVG(SPEED) 
 
 
