@@ -231,6 +231,37 @@ Most of my errors in SQL have come from small details: missing spaces, commas, o
 
 - Now let us use functions to enact on growups by replacing * in our SELECT command - this is because * stands for all, and we dont want all, we just want what we are sorting by which is AVG(SPEED),
 
-- However, this gives us a messy result as we cannot see which average goes with each propellant, therefore we need more columns. we can do this by writing SELECT "propellant," - the comma is important -BEFORE the AVG(SPEED) 
+- However, this gives us a messy result as we cannot see which average goes with each propellant, therefore we need more columns. we can do this by writing SELECT "propellant," - the comma is important -BEFORE the AVG(SPEED)
 
+- we can use other functions, such as SUM() AVERAGE() and COUNT() which will allow us to retrieve different useful pieces of information within a relational database. 
+
+</details>
+
+<details><summaary> Using Operators in SQL Queries </summaary>
+
+From the lab practical, I have learnt that it is often necessary to perform operations with the results of a read command. We could use excel by uploading the data onto a spreadsheet, however, SQL allows us to work faster by querying databases and using operators to aggregate (to collect into a mass or whole) values and make calculations.
+
+
+- Operators- the key words used to perform these calulations.
+
+- The syntax for operations in SQL includes the keyword followed by the field in which the operation is to be performed, contained within the parenthesis.
+
+- Operators can be modified by using the WHERE keyword
+
+
+## example review table
+
+Lets say we had a table that shown the review data from the movie database that was in the SQL lab practical. 
+
+Review (table name)
+- movieid
+- authorname
+- score
+- comment
+- date
+
+- to return average of all review scores for the movie with id number 123, we would use the query SELECT AVG(score) FROM review WHERE MovieID = 123
+
+- 
+</details>
 
