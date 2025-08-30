@@ -201,4 +201,70 @@ Quick, convenient, like a shortcut, but dangerous if column names match accident
 | NATURAL JOIN      | Only rows where same-named columns match  | Ignored                          | When I want a shortcut join on identical column names, must be sure names/types match |
 
 
-<details><summary> combining SQL functions to extract data  </summary>
+<details><summary> Data Manupulation Language </summary>
+
+### Data Manipulation Language (DML)
+
+
+Okay, so DML is basically how I actually put data into a database or mess with it. 
+
+SELECT queries are useless if there’s nothing there to select, right?
+
+INSERT: This is me adding a new row of data. Makes sense because the table is like an empty sheet, and I need to put info somewhere.
+
+DELETE: Removes stuff I don’t need. I get why this exists, but I have to be careful—if I mess up the WHERE clause, I could wipe out the wrong row. That’s scary.
+
+UPDATE and SET: Change something already there. I like that SET is explicit—it forces me to say exactly what I’m changing, which reduces mistakes.
+
+LOCK: Stops others from touching a table while I’m working. This seems super important if multiple people are editing at once, but also feels restrictive if I just want to peek at something.
+
+
+Why this matters: Without DML, the database is just an empty structure. I need these commands to make the database useful and dynamic.
+
+### Data Definition Language (DDL)
+
+DDL is like building the shelves before putting books on them. Makes sense—I can’t insert data if the table doesn’t exist.
+
+CREATE: Makes a new table. Okay, this is obvious. I can define column names, types, primary keys. It’s like saying “this is what my data will look like.”
+
+DROP: Deletes tables. Dangerous, like burning the shelves. I see why it exists, but I probably won’t use it casually.
+
+ALTER: Change the table structure. Good for evolving data. I understand why this is critical because data requirements change over time.
+
+RENAME: Rename tables. Useful but seems minor; maybe more for organization than functionality.
+
+Understanding why: I get that DDL is foundational. Without it, there’s no “place” to put the data. DML and DDL go hand-in-hand: first build it (DDL), then fill and manage it (DML).
+
+
+### Distributed Data and NoSQL
+
+Okay, now it gets tricky. Relational databases are fine for small to medium stuff, but with massive datasets like web logs or social media, one server just can’t cut it. Makes sense—processing and storage are physical limits.
+
+Distributed processing: Break data into chunks, give them to multiple computers, each handles its piece. Now I see why cloud computing is such a big deal—it’s basically teamwork for data.
+
+NoSQL databases: These are weird but necessary. They don’t need rigid tables. I get why this is appealing—sometimes data is messy or constantly changing, so forcing it into a table is like trying to stuff a sofa into a suitcase.
+
+Types of NoSQL:
+
+Key-Value Stores: Each key is unique, value can be anything. Cool for things like user sessions where data doesn’t fit neatly into a table. Efficient, but I notice it probably can’t handle complex relationships well.
+
+Document Databases: Stores JSON-like documents. Flexible. Makes sense if I don’t want to redesign my table every time I add a new field. But probably slower for relational queries.
+
+Graph Databases: Store nodes and connections. This clicks—networks are naturally graphs. Social media or maps would be clunky in a normal table.
+
+Wide Column Stores: Huge tables with mostly empty cells. Weird, but actually smart for sparse data like which users watched which movies. Normal relational tables would be inefficient.
+
+Critical evaluation:
+
+I get that NoSQL is fast and flexible, but it sacrifices accuracy, consistency, and standards. That makes me nervous for serious business stuff. Relational databases might be slower but feel safer.
+
+So, NoSQL is great for huge, changing, messy data. Relational is great for structured, stable, accurate data. I can see why companies use both depending on their needs.
+
+Overall takeaway in my own words:
+
+DML is “playing with the data” – adding, changing, removing.
+
+DDL is “building the containers” – tables, schemas, structure.
+
+NoSQL and distributed databases exist because traditional RDBMS can’t handle massive, messy, or highly connected data efficiently. I understand the trade-offs: speed and flexibility vs safety and consistency.
+
