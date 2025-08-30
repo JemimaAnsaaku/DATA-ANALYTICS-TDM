@@ -234,10 +234,9 @@ Most of my errors in SQL have come from small details: missing spaces, commas, o
 - However, this gives us a messy result as we cannot see which average goes with each propellant, therefore we need more columns. we can do this by writing SELECT "propellant," - the comma is important -BEFORE the AVG(SPEED)
 
 - we can use other functions, such as SUM() AVERAGE() and COUNT() which will allow us to retrieve different useful pieces of information within a relational database. 
-
 </details>
 
-<details><summaary> Using Operators in SQL Queries </summaary>
+<details><summary> Using operators in the SQL queries </summary>
 
 From the lab practical, I have learnt that it is often necessary to perform operations with the results of a read command. We could use excel by uploading the data onto a spreadsheet, however, SQL allows us to work faster by querying databases and using operators to aggregate (to collect into a mass or whole) values and make calculations.
 
@@ -265,3 +264,167 @@ Review (table name)
 - 
 </details>
 
+<details><summary> SQL data retrieval starter pack </summary>
+
+
+# SQL Retrieval Structures and Why They’re Used  
+
+1. Basic Selection
+
+SELECT column_list FROM table_name;
+
+Purpose: Used to get data from a table.
+
+Scenario: You want to see all the data in a table or only certain columns without filtering anything.
+
+Example: Looking at all customers in your customer table to check their contact info.
+Filtering Rows
+
+2. SELECT column_list FROM table_name WHERE condition;
+
+Purpose: Used to get only rows that meet certain rules.
+
+Scenario: You want only rows where a column matches a value or falls within a range.
+
+Example: Selecting only orders where the total is greater than $100.
+
+3. Sorting Results
+
+SELECT column_list FROM table_name ORDER BY column_list ASC|DESC;
+
+Purpose: Used to sort data.
+
+Scenario: You want to see the results in order, such as oldest to newest, smallest to largest, or alphabetically.
+
+Example: Sorting employees by their hire date to see who has been at the company the longest.
+
+4. Removing Duplicates
+
+SELECT DISTINCT column_list FROM table_name;
+
+Purpose: Shows only unique values.
+
+Scenario: You want a list of all unique categories in a table, ignoring repeated values.
+
+Example: Getting a list of all different product categories in your store.
+
+5. Limiting Output
+
+SELECT column_list FROM table_name LIMIT number OFFSET number;
+
+Purpose: Used to return a limited number of rows.
+
+Scenario: You have thousands of rows but only want the first 10 for preview or pagination.
+
+Example: Displaying only the first 20 orders on the first page of a website.
+
+Aggregate Functions
+
+SELECT AGG_FUNC(column_name) FROM table_name;
+
+Purpose: Used to perform calculations on rows instead of listing them all. Functions include COUNT, SUM, AVG, MIN, MAX.
+
+Scenario: You want total counts, sums, or averages of a column.
+
+Example: Counting how many orders were placed this month or finding the average order total.
+
+6. Grouping Results
+
+SELECT column_list, AGG_FUNC(column_name) FROM table_name GROUP BY column_list;
+
+Purpose: Groups rows together and summarizes each group.
+
+Scenario: You want totals, averages, or counts for each category or department.
+
+Example: Summing sales for each product category to see which category sells the most.
+
+7. Filtering Groups
+
+SELECT column_list, AGG_FUNC(column_name) FROM table_name GROUP BY column_list HAVING condition;
+
+Purpose: Filters groups after grouping.
+
+Scenario: Only show categories where totals or counts meet a certain condition.
+
+Example: Showing only product categories with total sales over $10,000.
+
+8. Joining Multiple Tables
+
+SELECT column_list FROM table1 JOIN table2 ON table1.column = table2.column;
+
+Purpose: Combines data from multiple tables.
+
+Scenario: Show customer details alongside their orders from another table.
+
+Example: Joining a customer table and an orders table to see each customer’s orders and their totals.
+
+9. Combining Results
+
+SELECT column_list FROM table1 UNION SELECT column_list FROM table2;
+
+Purpose: Merge results from multiple queries.
+
+Scenario: Combine similar data from two tables into one list.
+
+Example: Combining employee lists from two branch offices into a single list.
+
+10. Subqueries
+
+SELECT column_list FROM table_name WHERE column_name IN (SELECT column_name FROM another_table WHERE condition);
+
+Purpose: Use a query result as input for another query.
+
+Scenario: Get rows only if a related value exists in another table.
+
+Example: Selecting all products that appear in orders over $500.
+
+11. Conditional Expressions
+SELECT column_name, CASE WHEN condition THEN result ELSE other_result END AS alias FROM table_name;
+
+Purpose: Create new values in the output based on rules.
+
+Scenario: Classify values into categories, such as "Pass" or "Fail" based on scores.
+
+Example: Creating a column that shows "High", "Medium", or "Low" priority based on order totals.
+
+12. Counting Rows
+
+Basic Count:
+
+SELECT COUNT(column_name) FROM table_name;
+
+Purpose: Counts the total number of rows in a table or column.
+
+Scenario: You want to know how many items, orders, or users exist in total.
+
+Example: Counting how many orders were placed last month:
+
+SELECT COUNT(order_id) FROM orders WHERE order_date >= '2025-08-01';
+
+13. Retrieval Process
+
+Just want all the data: SELECT ...
+
+Only want certain rows: SELECT ... WHERE ...
+
+Sort the data: SELECT ... ORDER BY ...
+
+Remove duplicates: SELECT DISTINCT ...
+
+Only a few rows: SELECT ... LIMIT ...
+
+Do calculations on rows: SELECT AGG_FUNC(column_name) ...
+
+Summarise by category: SELECT ... GROUP BY ...
+
+Filter summarized groups: SELECT ... GROUP BY ... HAVING ...
+
+Combine data from more than one table: SELECT ... JOIN ...
+
+Merge multiple query results: SELECT ... UNION ...
+
+Filter using results from another query: SELECT ... WHERE column IN (SELECT ...)
+
+Create new values based on conditions: SELECT CASE WHEN ... THEN ... ELSE ... END
+
+</details>
